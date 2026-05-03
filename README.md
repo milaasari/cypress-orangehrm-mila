@@ -1,4 +1,5 @@
-# Automation Testing OrangeHRM - Quiz Pekan 3
+# Automation Testing OrangeHRM - Quiz Pekan 3 
+-Mila Sari Rusadi
 
 Project ini berisi tugas pengujian otomatis (Automation Testing) fitur Login pada website OrangeHRM menggunakan **Cypress** untuk memenuhi kuis pekan 3.
 
@@ -19,6 +20,26 @@ Berikut adalah skenario yang diuji:
 8. **TC-008**: Verifikasi keamanan (Password Masking).
 9. **TC-009**: Verifikasi Case Sensitivity pada username.
 10. **TC-010**: Penanganan input dengan spasi (Space Handling).
+
+# 📋 Requirement
+Sebelum menjalankan pengujian, pastikan telah menginstal:
+* [Node.js](https://nodejs.org/) (Versi terbaru direkomendasikan)
+* [Cypress](https://www.cypress.io/)
+
+# 🧪 Skenario Pengujian (Test Cases)
+
+| ID | Judul Test Case | Skenario | Action Utama (Interaksi) | Assertion Utama (Ekspektasi) |
+|:---:|---|---|---|---|
+| **TC-01** | Login Valid | Login menggunakan kredensial yang terdaftar. | `.type()`, `.click()` | URL mengandung `/dashboard` |
+| **TC-02** | Invalid Password | Login dengan password yang salah. | `.type()`, `.click()` | Alert berisi "Invalid credentials" |
+| **TC-03** | Invalid Username | Login dengan username yang tidak terdaftar. | `.type()`, `.click()` | Alert berisi "Invalid credentials" |
+| **TC-04** | Login Empty | Login dengan kolom kosong. | `.click()` | Muncul pesan "Required" |
+| **TC-05** | Empty Password | Login tanpa mengisi password. | `.type()`, `.click()` | Muncul pesan "Required" |
+| **TC-06** | Empty Username | Login tanpa mengisi username. | `.type()`, `.click()` | Muncul pesan "Required" |
+| **TC-07** | Forgot Password | Klik link lupa password. | `.click()` | URL mengandung `/requestPasswordResetCode` |
+| **TC-08** | Masking Password | Memastikan password tidak terlihat. | `.type()` | Atribut input adalah `type="password"` |
+| **TC-09** | Case Sensitivity | Cek sensitivitas huruf besar/kecil. | `.type()` | Berhasil login jika sistem non-sensitive |
+| **TC-10** | Space Handling | Cek input dengan spasi tambahan. | `.type()` | Pesan error jika tidak di-trim otomatis |
 
 ## 🛠️ Cara Menjalankan
 1. Clone repository ini.
