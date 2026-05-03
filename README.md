@@ -30,16 +30,16 @@ Sebelum menjalankan pengujian, pastikan telah menginstal:
 
 | ID | Judul Test Case | Skenario | Action Utama (Interaksi) | Assertion Utama (Ekspektasi) |
 |:---:|---|---|---|---|
-| **TC-01** | Login Valid | Login menggunakan kredensial yang terdaftar. | `.type()`, `.click()` | URL mengandung `/dashboard` |
-| **TC-02** | Invalid Password | Login dengan password yang salah. | `.type()`, `.click()` | Alert berisi "Invalid credentials" |
-| **TC-03** | Invalid Username | Login dengan username yang tidak terdaftar. | `.type()`, `.click()` | Alert berisi "Invalid credentials" |
-| **TC-04** | Login Empty | Login dengan kolom kosong. | `.click()` | Muncul pesan "Required" |
-| **TC-05** | Empty Password | Login tanpa mengisi password. | `.type()`, `.click()` | Muncul pesan "Required" |
-| **TC-06** | Empty Username | Login tanpa mengisi username. | `.type()`, `.click()` | Muncul pesan "Required" |
-| **TC-07** | Forgot Password | Klik link lupa password. | `.click()` | URL mengandung `/requestPasswordResetCode` |
-| **TC-08** | Masking Password | Memastikan password tidak terlihat. | `.type()` | Atribut input adalah `type="password"` |
+| **TC-001** | Login Valid | Login menggunakan kredensial yang terdaftar. | `.type()`, `.click()` | URL mengandung `/dashboard` |
+| **TC-002** | Invalid Password | Login dengan password yang salah. | `.type()`, `.click()` | Alert berisi "Invalid credentials" |
+| **TC-003** | Invalid Username | Login dengan username yang tidak terdaftar. | `.type()`, `.click()` | Alert berisi "Invalid credentials" |
+| **TC-004** | Login Empty | Login dengan kolom kosong. | `.click()` | Muncul pesan "Required" |
+| **TC-005** | Empty Password | Login tanpa mengisi password. | `.type()`, `.click()` | Muncul pesan "Required" |
+| **TC-006** | Empty Username | Login tanpa mengisi username. | `.type()`, `.click()` | Muncul pesan "Required" |
+| **TC-007** | Forgot Password | Klik link lupa password. | `.click()` | URL mengandung `/requestPasswordResetCode` |
+| **TC-008** | Masking Password | Memastikan password tidak terlihat. | `.type()` | Atribut input adalah `type="password"` |
 | **TC-09** | Case Sensitivity | Cek sensitivitas huruf besar/kecil. | `.type()` | Berhasil login jika sistem non-sensitive |
-| **TC-10** | Space Handling | Cek input dengan spasi tambahan. | `.type()` | Pesan error jika tidak di-trim otomatis |
+| **TC-100** | Space Handling | Cek input dengan spasi tambahan. | `.type()` | Pesan error jika tidak di-trim otomatis |
 
 ## 🛠️ Cara Menjalankan
 1. Clone repository ini.
