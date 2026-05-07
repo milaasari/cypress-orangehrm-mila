@@ -45,7 +45,9 @@ test case:
 | **TC-08** | Masking Password | Memastikan password tidak terlihat. | `.type()` | Atribut input adalah `type="password"` |
 | **TC-09** | Case Sensitivity | Cek sensitivitas huruf besar/kecil. | `.type()` | Berhasil login jika sistem non-sensitive |
 | **TC-10** | Space Handling | Cek input dengan spasi tambahan. | `.type()` | Pesan error jika tidak di-trim otomatis |
+
 ---
+
 ## 🚀 Hasil Pengujian Tugas 16 (Screenshot)
 <img width="1582" height="890" alt="image" src="https://github.com/user-attachments/assets/6a202d40-9bd5-4cd3-81bd-5da642bc0572" />
 *Menampilkan Test Case utama yang berhasil dijalankan dengan status PASSED menggunakan Intercept.*
@@ -61,8 +63,10 @@ Sesuai instruksi, pada file `intercepts_login.cy.js`, setiap Test Case menggunak
 | **TC-004** | Login Empty (Semua Kosong) | `.click()` login | `**/localization` | Memantau API bahasa yang dipanggil saat interaksi form (@apiLocal) (mencegat API lain yang terpanggil). |
 | **TC-007** | Forgot Password | `.click()` link | `**/requestPasswordResetCode` | Memastikan API reset password terpanggil. |
 | **TC-009** | Case Sensitivity | `.click()` login | `**/subunits` | Memastikan API struktur organisasi dimuat setelah login. |
-| **TC-010** | Space Handling | `.click()` login | `**/employees/shortcut` | Memantau API shortcut data karyawan saat login diproses (@apiShortcut) (mencegat API lain yang terpanggil). |
+| **TC-010** | Space Handling | `.click()` login | `**/employees/shortcut` | Memantau API shortcut data karyawan saat login diproses (@apiShortcut) (mencegat API lain yang terpanggil). 
+
 ---
+
 ## 🚀 Hasil Pengujian Tugas 17 (Screenshot)
 <img width="1585" height="721" alt="image" src="https://github.com/user-attachments/assets/167a5ab6-d18e-46dd-97c7-ccd4147bc3c3" />
 
@@ -78,10 +82,13 @@ Teradapat **7 Skenario Utama** dengan method yang disediakan oleh Class `LoginPa
 | **TC-005** | Login Empty Password | Mengisi username saja, lalu klik login. | Kolom password memunculkan "Required" |
 | **TC-006** | Logout | `loginPage.logout()` (setelah login valid) | Kembali ke halaman login (`/login`) |
 | **TC-007** | Forgot Password | `loginPage.clickForgotPassword()` | Navigasi ke `/requestPasswordResetCode` |
+
 ---
+
 ## 🚀 Hasil Pengujian Tugas 18 (Screenshot)
 <img width="1582" height="785" alt="image" src="https://github.com/user-attachments/assets/37a62e93-cf1f-4d85-bb5e-e58b97cd0b18" />
 *Seluruh skenario (10/10) telah berhasil dijalankan dengan status **PASSED** di Cypress Runner.*
+
 ## 📋 Skenario Pengujian (10 Test Cases)
 Berikut adalah detail request dan asersi yang dilakukan untuk memastikan fungsionalitas API berjalan dengan baik:
 
