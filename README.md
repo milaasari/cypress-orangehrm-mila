@@ -7,9 +7,8 @@ Project ini berisi gabungan dari **Quiz 3** (10 Test Case Login) dan **Tugas 16*
 * **Quiz 3:** `cypress/e2e/login_orangehrm.cy.js` (Pengujian)
 * **Tugas 16:** `cypress/e2e/intercepts_login.cy.js` (Pengujian dengan Intercept API)
 
-Untuk memisahkan Tugas 17 dengan tugas dan quiz sebelumnya, file diletakkan pada direktori berikut:
-* **Page Object (Locator & Action):** `cypress/support/page_objects/loginPage.js`
-* **Test Spec (Logika Pengujian):** `cypress/e2e/login.cy.js`
+* **Tugas 17: Page Object (Locator & Action):** `cypress/support/page_objects/loginPage.js`
+* **Tugas 17: Test Spec (Logika Pengujian):** `cypress/e2e/login.cy.js`
 
 * **Tugas 18:** `cypress/e2e/tugas-18-api/api_test.cy.js` (automation API pakai platzi)
 
