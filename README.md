@@ -1,4 +1,4 @@
-# Quiz Pekan 3 & Tugas 16, 17, dan 18
+# Quiz Pekan 3, Tugas 16, Tugas 17, dan Tugas 18
 **Oleh: Mila Sari Rusadi**
 
 Project ini berisi gabungan dari **Quiz 3** (10 Test Case Login) dan **Tugas 16** (Implementasi `cy.intercept` pada Automation Testing) menggunakan **Cypress** pada website OrangeHRM.
