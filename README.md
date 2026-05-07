@@ -84,8 +84,7 @@ Sebelum menjalankan pengujian, pastikan telah menginstal:
 * [Node.js](https://nodejs.org/) (Versi terbaru direkomendasikan)
 * [Cypress](https://www.cypress.io/)
 
-# 🛠️ Cara Menjalankan
-1. **Clone repository** ini ke komputer Anda.
-2. Buka terminal di VS Code, jalankan perintah:
-   ```bash
-   npm install
+## 🛠️ Cara Menjalankan
+1. Clone repository ini.
+2. Jalankan `npm install`.
+3. Jalankan `npx cypress open` dan pilih file yang akan dijalankan.
