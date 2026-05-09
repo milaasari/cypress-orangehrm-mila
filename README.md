@@ -110,7 +110,7 @@ Berikut adalah detail request dan asersi yang dilakukan untuk memastikan fungsio
 * **File utama** :`script: final-project/orangeHRM_TA.cy.js`         
 * **POM Login**  :`support/page_objectsTA/loginPage.js`              
 * **POM Lupa Pass** : `support/page_objectsTA/ forgotPasswordPage.js`    
-* **POM Hal Directory : `support/page_objectsTA/directoryPage.js`         
+* **POM Hal Directory** : `support/page_objectsTA/directoryPage.js`         
 
 ### **Skenario Pengujian (Test Cases)**
 
