@@ -1,4 +1,4 @@
-# Quiz Pekan 3, Tugas 16, Tugas 17, dan Tugas 18
+# Quiz Pekan 3, Tugas 16, Tugas 17, Tugas 18, dan TA
 **Oleh: Mila Sari Rusadi**
 
 Project ini berisi gabungan dari **Quiz 3** (10 Test Case Login) dan **Tugas 16** (Implementasi `cy.intercept` pada Automation Testing) menggunakan **Cypress** pada website OrangeHRM.
@@ -91,7 +91,7 @@ Teradapat **7 Skenario Utama** dengan method yang disediakan oleh Class `LoginPa
 ## 📋 Skenario Pengujian (10 Test Cases)
 Berikut adalah detail request dan asersi yang dilakukan untuk memastikan fungsionalitas API berjalan dengan baik:
 
-| ID | Method | Endpoint | Skenario | Deskripsi Asersi |
+| ID | Method | Endpoint | Skenario | Penjelasan |
 |:---|:---|:---|:---|:---|
 | **TC-001** | `GET` | `/products` | Get All Products | Status 200, Responnya array, length min 1 |
 | **TC-002** | `GET` | `/products/{id}` | Get Single Product | Status 200, ID produk sesuai dengan yang diminta |
@@ -103,6 +103,51 @@ Berikut adalah detail request dan asersi yang dilakukan untuk memastikan fungsio
 | **TC-008** | `GET` | `/products/` | Filter by Category | Status 200, Respon berupa array |
 | **TC-009** | `POST` | `/users` | Create New User | Status 201, Email unik menggunakan timestamp |
 | **TC-010** | `GET` | `/categories` | Get All Categories | Status 200, Array tidak kosong, item punya 'name' |
+
+#PROJECT AKHIR 
+## Lokasi Folder:
+cypress/
+├── e2e/
+│   └── final-project/
+│       └── orangeHRM_TA.cy.js       # File Test Script Utama
+├── support/
+│   └── page_objectsTA/
+│       ├── loginPage.js             # POM: Halaman Login
+│       ├── forgotPasswordPage.js    # POM: Halaman Lupa Password
+│       └── directoryPage.js         # POM: Halaman Directory
+
+### **Skenario Pengujian (Test Cases)**
+
+| ID | Modul | Skenario | Ekspektasi Hasil |
+| :--- | :--- | :--- | :--- |
+| **TC-001** | Login | Success Login | Status 200, URL mengarah ke `/dashboard` |
+| **TC-002** | Login | Failed - Wrong Password | Muncul pesan "Invalid credentials" |
+| **TC-003** | Login | Failed - Wrong Username | Muncul pesan "Invalid credentials" |
+| **TC-004** | Login | Failed - Empty Username | Muncul validasi "Required" pada field Username |
+| **TC-005** | Login | Failed - Empty Password | Muncul validasi "Required" pada field Password |
+| **TC-006** | Login | Failed - Both Empty | Muncul dua pesan validasi "Required" |
+| **TC-007** | Login | Case Sensitive Check | Login berhasil meski username menggunakan huruf kecil |
+| **TC-008** | Login | Branding Logo Check | Logo OrangeHRM terlihat di halaman login |
+| **TC-009** | Login | Password Masking | Input password disamarkan (`type="password"`) |
+| **TC-010** | Login | API Status Code | Intercept request dashboard menghasilkan status 200 |
+| **TC-011** | Forgot Password | Navigate to Reset | Berhasil masuk ke halaman reset password |
+| **TC-013** | Forgot Password | Cancel Reset | Kembali ke halaman login setelah klik cancel |
+| **TC-014** | Forgot Password | Empty Validation | Muncul pesan "Required" jika username kosong |
+| **TC-016** | Directory | Access Menu | Berhasil masuk ke halaman Directory |
+| **TC-020** | Directory | Reset Filter | Filter kembali ke default (`-- Select --`) |
+| **TC-023** | Directory | Autocomplete Dropdown | List nama muncul saat user mengetik di kolom nama |
+| **TC-024** | Directory | Profile Card | Detail profile muncul saat salah satu record diklik |
+| **TC-025** | Directory | Multiple Records | Menampilkan daftar record jika ditemukan lebih dari satu |
+| **TC-026** | Directory | API Filter Validation | Intercept request employees menghasilkan status 200 |
+| **TC-027** | Directory | Empty Result UI | UI merespon dengan benar jika data tidak ditemukan |
+| **TC-030** | Directory | Label Visibility | Label Employee, Job Title, dan Location terlihat jelas |
+| **TC-033** | Directory | Footer Branding | Terdapat link yang mengarah ke website OrangeHRM |
+| **TC-034** | General | User Dropdown | Nama profil user muncul di pojok kanan atas |
+
+##🚀 Hasil Pengujian TA (Screenshot)
+<img width="987" height="885" alt="image" src="https://github.com/user-attachments/assets/ea58cad1-84f8-4b77-be20-c146577d8516" />
+*Menampilkan Test Case berhasil dijalankan dengan status PASSED*
+
 
 ## 🛠️ Alat dan bahan (Requirements)
 Sebelum menjalankan pengujian, pastikan telah menginstal:
