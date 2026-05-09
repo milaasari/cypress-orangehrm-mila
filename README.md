@@ -107,15 +107,10 @@ Berikut adalah detail request dan asersi yang dilakukan untuk memastikan fungsio
 # PROJECT AKHIR QUALITY ASSURANCE SANBERCODE
 
 ## Lokasi Folder:
-cypress/
-├── e2e/
-│   └── final-project/
-│       └── orangeHRM_TA.cy.js       # File Test Script Utama
-├── support/
-│   └── page_objectsTA/
-│       ├── loginPage.js             # POM: Halaman Login
-│       ├── forgotPasswordPage.js    # POM: Halaman Lupa Password
-│       └── directoryPage.js         # POM: Halaman Directory
+`script: final-project/orangeHRM_TA.cy.js`          (File Test Script Utama)
+`support/page_objectsTA/loginPage.js`               (POM: Halaman Login)
+`support/page_objectsTA/ forgotPasswordPage.js`     (POM: Halaman Lupa Password)
+`support/page_objectsTA/directoryPage.js`           (POM: Halaman Directory)
 
 ### **Skenario Pengujian (Test Cases)**
 
