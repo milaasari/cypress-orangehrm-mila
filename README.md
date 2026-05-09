@@ -104,7 +104,8 @@ Berikut adalah detail request dan asersi yang dilakukan untuk memastikan fungsio
 | **TC-009** | `POST` | `/users` | Create New User | Status 201, Email unik menggunakan timestamp |
 | **TC-010** | `GET` | `/categories` | Get All Categories | Status 200, Array tidak kosong, item punya 'name' |
 
-#PROJECT AKHIR 
+# PROJECT AKHIR QUALITY ASSURANCE SANBERCODE
+
 ## Lokasi Folder:
 cypress/
 ├── e2e/
